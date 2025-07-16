@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ELAMUNASAC - Empresa constructora especializada en transporte de carga pesada, cuatrimotos para minas y mantenimiento de obras rurales.">
+    <meta name="author" content="ELAMUNASAC">
+    <title>EL AMUNA S.A.C. - Inicio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top"> <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/imagenes/logo.png" alt="Logo ELAMUNASAC" class="logo-navbar">
+                    <span>INVERSIONES EL AMUNA S.A.C.</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="flota.html">Flota</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/imagenes/carousel1.jpg" class="d-block w-100" alt="Transporte de Carga Pesada">
+                <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                    <div class="text-center">
+                        <h2 class="animate__animated animate__fadeInDown">Soluciones de Transporte de Carga Pesada</h2>
+                        <p class="animate__animated animate__fadeInUp">Eficiencia y seguridad en el traslado de grandes volúmenes para tu empresa.</p>
+                        <a href="servicios.html" class="btn btn-warning btn-lg animate__animated animate__zoomIn">Ver Servicios <i class="fas fa-truck ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/imagenes/carousel2.jpg" class="d-block w-100" alt="Cuatrimotos para Minas">
+                <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                    <div class="text-center">
+                        <h2 class="animate__animated animate__fadeInDown">Movilidad Ágil en Terrenos Difíciles</h2>
+                        <p class="animate__animated animate__fadeInUp">Cuatrimotos robustas para operaciones en minas y zonas rurales.</p>
+                        <a href="flota.html" class="btn btn-warning btn-lg animate__animated animate__zoomIn">Explorar Flota <i class="fas fa-motorcycle ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/imagenes/carousel3.jpg" class="d-block w-100" alt="Mantenimiento de Obras Rurales">
+                <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                    <div class="text-center">
+                        <h2 class="animate__animated animate__fadeInDown">Mantenimiento Integral para Obras Rurales</h2>
+                        <p class="animate__animated animate__fadeInUp">Experiencia y calidad en la ejecución de proyectos en zonas remotas.</p>
+                        <a href="servicios.html" class="btn btn-warning btn-lg animate__animated animate__zoomIn">Más Detalles <i class="fas fa-tools ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+
+    <section id="about" class="about py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4 section-title">¿Quiénes Somos?</h2>
+            <p class="lead mb-4">
+                En **INVERSIONES EL AMUNA S.A.C.**, somos líderes en brindar soluciones integrales de transporte y construcción. Con años de experiencia en el sector, nos especializamos en el traslado eficiente de carga pesada, el alquiler de vehículos todoterreno para entornos exigentes y el mantenimiento experto de infraestructuras rurales.
+            </p>
+            <p class="mb-5">
+                Nuestro compromiso es con la excelencia, la seguridad y la satisfacción de nuestros clientes, ofreciendo un servicio confiable y adaptado a las necesidades específicas de cada proyecto, desde grandes empresas agrícolas como Camposol y ViruSac hasta obras públicas vitales en zonas remotas.
+            </p>
+            <a href="servicios.html" class="btn btn-dark btn-lg">Descubre Más <i class="fas fa-info-circle ms-2"></i></a>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="mb-5 section-title text-white">¿Por Qué Elegir a EL AMUNA S.A.C.?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="icon-box animate__animated animate__fadeInUp">
+                        <i class="fas fa-shield-alt icon-feature mb-3"></i>
+                        <h3 class="text-warning">Seguridad</h3>
+                        <p>Priorizamos la seguridad en todas nuestras operaciones y el bienestar de nuestro personal.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-box animate__animated animate__fadeInUp animate__delay-0-2s">
+                        <i class="fas fa-handshake icon-feature mb-3"></i>
+                        <h3 class="text-warning">Confiabilidad</h3>
+                        <p>Cumplimos con nuestros compromisos y entregamos resultados excepcionales en cada proyecto.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-box animate__animated animate__fadeInUp animate__delay-0-4s">
+                        <i class="fas fa-cogs icon-feature mb-3"></i>
+                        <h3 class="text-warning">Tecnología y Flota</h3>
+                        <p>Invertimos en equipos modernos y tecnología avanzada para un servicio de primera.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clients" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="mb-5 section-title">Nuestros Clientes Confían en Nosotros</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <img src="assets/imagenes/logo-camposol.png" alt="Logo Camposol" class="img-fluid client-logo"> </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <img src="assets/imagenes/logo-virusac.png" alt="Logo ViruSac" class="img-fluid client-logo"> </div>
+                <div class="col-md-4">
+                    <p class="lead text-dark">Empresas líderes en el Perú confían en la experiencia y profesionalismo de EL AMUNA S.A.C. para sus operaciones más críticas.</p>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section id="mapa" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4 section-title">Encuéntranos en el Mapa</h2>
+            <p class="lead mb-4">Visítanos en nuestra oficina principal o contáctanos para coordinar un servicio.</p>
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4 section-title">Contáctanos Directamente</h2>
+            <p class="lead mb-5">Envíanos un mensaje y te responderemos a la brevedad posible. ¡Estamos listos para tu proyecto!</p>
+            <div class="d-flex justify-content-center">
+                <form style="max-width: 500px; width: 100%;">
+                    <div class="mb-3">
+                        <input type="text" class="form-control form-control-lg" placeholder="Nombre de la Persona o Empresa" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control form-control-lg" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="tel" class="form-control form-control-lg" placeholder="Número de Teléfono" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control form-control-lg" placeholder="Mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning w-100 btn-lg"><i class="fas fa-paper-plane"></i> Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2025 ELAMUNASAC | Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#" class="text-white">Política de Privacidad</a> |
+                <a href="#" class="text-white">Términos y Condiciones</a>
+            </div>
+            <div class="contact-info mt-3">
+                <p><i class="fas fa-phone-alt"></i> 927 404 457</p>
+                <p><i class="fas fa-id-card"></i> 20610733001 (RUC)</p>
+                <p><i class="fas fa-envelope"></i> inversioneselamunasac@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> MZ. H LOTE 8 Alto Trujillo, Trujillo, La Libertad</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

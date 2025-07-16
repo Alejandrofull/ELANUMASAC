@@ -1,0 +1,372 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* Fondo claro general */
+    padding-top: 76px; /* Ajuste para navbar fixed-top */
+}
+
+/* Header */
+.navbar {
+    background-color: #333333; /* Fondo oscuro */
+    padding: 15px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar-brand .logo-navbar {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.navbar-brand span {
+    color: #f8c200; /* Dorado para el texto del navbar-brand */
+    font-weight: 700;
+    font-size: 1.2em; /* Adjusted font size for brand name */
+}
+
+.nav-link {
+    color: #f8c200 !important; /* Dorado */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #e0a800 !important; /* Dorado más claro en hover */
+}
+
+/* Fixed Navbar on Scroll (Optional, but nice effect) */
+.navbar.scrolled {
+    background-color: rgba(51, 51, 51, 0.9); /* Slightly transparent when scrolled */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+
+/* Hero Section with Carousel */
+#hero-carousel {
+    height: 90vh; /* Make the carousel take up most of the viewport height */
+    position: relative;
+    overflow: hidden;
+}
+
+#hero-carousel .carousel-item {
+    height: 100%;
+    background-color: #333; /* Fallback color */
+}
+
+#hero-carousel .carousel-item img {
+    height: 100%;
+    object-fit: cover; /* Cover the entire area */
+    filter: brightness(60%); /* Darken image for text readability */
+}
+
+#hero-carousel .carousel-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 0; /* Reset default padding */
+}
+
+#hero-carousel h2 {
+    font-size: 3.8em; /* Larger, more impactful heading */
+    font-weight: 700;
+    color: #f8c200;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    margin-bottom: 20px;
+}
+
+#hero-carousel p {
+    font-size: 1.5em;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    margin-bottom: 40px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hero-carousel .btn {
+    padding: 15px 40px;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+#hero-carousel .btn-warning {
+    background-color: #f8c200;
+    border-color: #f8c200;
+    color: #333;
+}
+
+#hero-carousel .btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Optional: Animate.css for carousel captions */
+/* Add this to your head section: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> */
+.animate__animated {
+    animation-duration: 1.5s;
+}
+
+
+/* Section Titles */
+.section-title {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #333333; /* Dark color for section titles */
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #f8c200; /* Golden underline */
+    border-radius: 2px;
+}
+
+/* About Section */
+.about {
+    background-color: #ffffff;
+    color: #333;
+}
+.about .btn-dark {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.about .btn-dark:hover {
+    background-color: #555;
+    border-color: #555;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+/* Why Choose Us Section */
+#why-choose-us {
+    background-color: #222; /* Darker background */
+    color: #fff;
+}
+#why-choose-us .section-title {
+    color: #fff; /* White title for dark background */
+}
+#why-choose-us .section-title::after {
+    background-color: #f8c200; /* Golden underline */
+}
+.icon-box {
+    padding: 20px;
+    text-align: center;
+}
+.icon-feature {
+    font-size: 4em;
+    color: #f8c200; /* Golden icon */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+.icon-box:hover .icon-feature {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+.icon-box h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.icon-box p {
+    color: #ccc;
+    font-size: 0.95em;
+}
+
+/* Clients Section */
+#clients {
+    background-color: #f8f9fa;
+}
+.client-logo {
+    max-height: 80px; /* Adjust size as needed */
+    filter: grayscale(100%); /* Desaturate logos */
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+.client-logo:hover {
+    filter: grayscale(0%); /* Full color on hover */
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+
+/* Mapa */
+#map {
+    height: 450px; /* Even taller map for prominence */
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+}
+
+/* Contacto */
+#contacto {
+    background-color: #ffffff; /* White background for contact form */
+}
+#contacto .section-title {
+    color: #333333; /* Dark title */
+}
+#contacto .section-title::after {
+    background-color: #f8c200; /* Golden underline */
+}
+#contacto p.lead {
+    color: #555;
+}
+#contacto form {
+    background: #fdfdfd; /* Slightly off-white for form background */
+    padding: 40px; /* More padding */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+#contacto .form-control {
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 14px 18px; /* Generous padding */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#contacto .form-control:focus {
+    border-color: #f8c200;
+    box-shadow: 0 0 8px rgba(248, 194, 0, 0.6);
+}
+
+#contacto .btn-warning {
+    background-color: #f8c200;
+    border: none;
+    padding: 16px 25px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    color: #333;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#contacto .btn-warning:hover {
+    background-color: #e0a800;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #f8c200;
+    padding: 40px 0; /* More padding */
+    font-size: 0.95em;
+}
+
+footer a {
+    color: #f8c200;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.footer-links a {
+    margin: 0 12px;
+}
+
+.contact-info p {
+    margin-bottom: 7px;
+    color: #eee;
+}
+
+.contact-info i {
+    color: #f8c200;
+    margin-right: 10px;
+    width: 25px;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    body {
+        padding-top: 66px; /* Adjust for smaller fixed navbar */
+    }
+    #hero-carousel h2 {
+        font-size: 2.5em;
+    }
+    #hero-carousel p {
+        font-size: 1.1em;
+    }
+    #hero-carousel .btn {
+        padding: 10px 25px;
+        font-size: 1em;
+    }
+    .section-title {
+        font-size: 2.2em;
+    }
+    .icon-feature {
+        font-size: 3em;
+    }
+    .client-logo {
+        max-height: 60px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    body {
+        padding-top: 56px; /* Even smaller fixed navbar */
+    }
+    #hero-carousel {
+        height: 60vh; /* Adjust height for mobile */
+    }
+    #hero-carousel h2 {
+        font-size: 1.8em;
+    }
+    #hero-carousel p {
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+    #hero-carousel .btn {
+        font-size: 0.9em;
+        padding: 8px 18px;
+    }
+    .section-title {
+        font-size: 1.8em;
+    }
+    .icon-feature {
+        font-size: 2.5em;
+    }
+    .client-logo {
+        max-height: 50px;
+    }
+    #map {
+        height: 300px;
+    }
+    #contacto form {
+        padding: 25px;
+    }
+    #contacto .form-control {
+        padding: 10px 12px;
+    }
+    #contacto .btn-warning {
+        padding: 12px 15px;
+        font-size: 1em;
+    }
+}
